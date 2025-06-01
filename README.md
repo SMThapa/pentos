@@ -1,1 +1,1 @@
-# pents
+# pentos
