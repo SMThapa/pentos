@@ -407,19 +407,29 @@ section#blankSpace{
 }
 .products-section .product-types .product-card{
     background: white;
-    height: 420px;
-    position: relative;
-    padding: 12px;
+    height: 420px;    
+    position: relative;    
     border-radius: 12px;
     cursor: pointer;
+    overflow: hidden;
+}
+.products-section .product-types .product-card:hover img{
+    scale: 1.1;
+}
+.products-section .product-types .product-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
 }
 .product-types .product-card .text-contents{
     position: absolute;
     bottom: 12px;
-    width: calc(100% - 24px);
+    width: calc(100% - 24px);    
     border-radius: 12px 0 12px;
     background: rgba(0,0,0,.6);
     padding: 12px;
+    margin:0 12px;
 }
 .product-types .product-card .heading{
     font-family: var(--font-bold);
@@ -546,6 +556,10 @@ section#blankSpace{
     background: white;
     height: 400px;
     border-radius: 25px;
+}
+.testimonial-section .testimonial-card .profile img{
+    height: 100%;
+    object-fit: cover;
 }
 
 
