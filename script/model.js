@@ -47,7 +47,7 @@ loader.load(
         model.rotation.x = .15
         
         model.position.x = 0
-        model.position.y = -.4
+        model.position.y = -.25
         model.position.z = -4
         
         scene.add(model);

@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pentos</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style/style.css">    
 </head>
 <body>
     
     <nav>
         <div class="navigation">
-            <div class="logo">Pentos.</div>
+            <a href="/">
+                <div class="logo">Xyonica.</div>
+            </a>
             <div class="menu-list">
                 <a href="#" class="active">Home</a>
-                <a href="#">Project</a>
-                <a href="#">About</a>
-                <a href="#">Blog</a>                
+
+                <div class="dropdown">
+                    <a href="#">Products <img src="./assets/down.png" alt=""></a>
+                    <div class="dropdown-content">
+                        <a href="#">UAVs</a>
+                        <a href="#">cars</a>
+                        <a href="#">boats</a>
+                        <a href="#">others</a>
+                    </div>
+                </div>
+
+                <a href="#">Accessories</a>
+                <a href="#">Explore</a>
+                <a href="#">About Us</a>
             </div>
             <div class="action-buttons">
                 <button class="btn-2">Contact 
@@ -33,20 +47,33 @@
     <main id="hero">        
         <div class="glowing-object"></div>
         <div class="hero-contents">
-            <div class="hero-title">Sky Master <img src="./assets/star.svg" alt="start" class="rotate"></div>
-            <div class="hero-description">Experience the thrill of precision flying with our advanced remote control aeroplane — built for speed, stability, and sky-high fun.</div>
+            <div class="hero-title">Epic flight vetical lift</div>
+            <!-- <div class="hero-description">Experience the thrill of precision flying with our advanced remote control aeroplane — built for speed, stability, and sky-high fun.</div> -->
+            <div class="hero-description">The drone that fights back!</div>
         </div>
     </main>
 
     <div class="theSticky">
         <section id="about">
             <div class="about-contents contents">
-                <div class="title">About Us</div>
+                <div class="title">Fly High</div>
                 <div class="description">Built for Flight. Driven by Passion.</div>
-                <p>At Sky Master RC, we turn the thrill of aviation into an exciting hands-on experience. What began as a hobby is now a passion to build RC planes that are easy to fly, fun to control, and made to last.</p>
-                <p>Whether you're just starting out or a seasoned flyer, our planes offer smooth, realistic flights. With a focus on quality, safety, and innovation, we’re here to help you take your adventure to the skies.</p>                                
+                <p>At Xyonica Hobby Store, we turn the thrill of
+                    aviation into an exhilarating hands-on
+                    experience—solo or head-to-head with
+                    friends. What began as a pastime has
+                    become our mission: to build RC planes and
+                    multiplayer drones that are effortless to fly,
+                    endlessly fun to control, and built to last.
+                    Whether you’re launching your first model or engaging in real-time drone dogfights, our
+                    designs deliver silky-smooth, lifelike
+                    performance. With an unwavering focus on
+                    quality, safety, and innovation, we’re here to
+                    help you and your friends take your aerial
+                    adventures to new heights.                    
+                </p>                                
 
-                <div class="achivements">
+                <!-- <div class="achivements">
                     <div class="achived">
                         <div class="total">50+</div>
                         <div class="topic">Products</div>
@@ -61,9 +88,9 @@
                         <div class="total">2+</div>
                         <div class="topic">Years of Experience</div>
                     </div>
-                </div>
+                </div> -->
 
-                <button class="btn-1">About Us <img src="./assets/top-right.png" alt="icon"></button>
+                <button class="btn-1">Know More<img src="./assets/top-right.png" alt="icon"></button>
 
                 <div class="glowing-object"></div>
             </div>
@@ -72,12 +99,25 @@
         <section id="whyUs">
             <div class="here"></div>
             <div class="why-us contents">
-                <div class="title">Why Choose Our RC Planes?</div>
-                <div class="description">Fly Longer. Fly Smarter. Fly Confident.</div>
-                <p>Our RC planes are engineered to deliver the perfect balance of endurance, control, and durability—whether you’re just starting out or a seasoned pilot. Every feature is designed to enhance your flying experience and keep you in the sky longer.</p>
-                <p>With long-lasting batteries, realistic controls, and a tough build, our planes provide unmatched performance in every flight. Plus, the beginner to pro flight modes let you customize your flying difficulty, making it easy to learn and rewarding to master. No matter your skill level, Sky Master RC is built to help you soar.</p>
+                <div class="title">Why choose our multiplayer drone?</div>
+                <div class="description">Fly. Battle. Win Together.</div>
+                <p>Our drones are designed not just for flight—but for thrilling
+                    multiplayer battles. With a winged tricopter layout, you get
+                    longer, more stable flights and smoother control every time
+                    you take off.
+                </p>
+                <p>
+                    Built-in IR combat mode lets up to 6 players battle in realtime, complete with LED “health” indicators and live hit
+                    feedback. Whether you're racing, freestyling, or dogfighting,
+                    every feature is made to elevate your experience and keep
+                    the adrenaline high.
+                </p>
+                <p>
+                    With quick-swap batteries, custom flight control, and futureready upgrades, the Xyonica Multiplayer Drone is built to fly
+                    harder, play smarter, and keep you in the game longer.
+                </p>
 
-                <button class="btn-1">Check all <img src="./assets/top-right.png" alt="icon" ></button>
+                <!-- <button class="btn-1">Check all <img src="./assets/top-right.png" alt="icon" ></button> -->
 
                 <div class="glowing-object"></div>
             </div>      
@@ -121,8 +161,14 @@
                         <div class="heading">Boats</div>
                     </div>
                 </div>
+                <div class="product-card">
+                    <img src="./assets/blog/battery.jpg" alt="">
+                    <div class="text-contents">
+                        <div class="heading">Accessories</div>
+                    </div>
+                </div>
             </div>
-            <button class="btn-1">View More<img src="./assets/top-right.png" alt="icon"></button>
+            <!-- <button class="btn-1">View More<img src="./assets/top-right.png" alt="icon"></button> -->
         </div>
     </section>
 
@@ -130,17 +176,81 @@
         <div class="testimonial-section">
             <div class="title">Testimonials</div>
             <div class="description">What our clients says</div>
+            <div class="swiper testimonial-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">                
+                            <div class="comment">
+                                <img src="./assets/quot.svg" alt="icon">
+                                <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
 
-            <div class="testimonial-card">                
-                <div class="comment">
-                    <img src="./assets/quot.svg" alt="icon">
-                    <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
+                                <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                            </div>
+                            <div class="profile">
+                                <img src="./assets/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">                
+                            <div class="comment">
+                                <img src="./assets/quot.svg" alt="icon">
+                                <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
 
-                    <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                                <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                            </div>
+                            <div class="profile">
+                                <img src="./assets/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">                
+                            <div class="comment">
+                                <img src="./assets/quot.svg" alt="icon">
+                                <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
+
+                                <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                            </div>
+                            <div class="profile">
+                                <img src="./assets/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">                
+                            <div class="comment">
+                                <img src="./assets/quot.svg" alt="icon">
+                                <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
+
+                                <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                            </div>
+                            <div class="profile">
+                                <img src="./assets/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">                
+                            <div class="comment">
+                                <img src="./assets/quot.svg" alt="icon">
+                                <p>Working with Pentos is a fantastic experience. He trulyunderstood our vision and turned our dream home into a reality. The attention to detail and dedication were beyond my imagniation.</p>
+
+                                <div class="name">Cameron Williamson <br><span>CEO, ISHKON</span></div>
+                            </div>
+                            <div class="profile">
+                                <img src="./assets/14.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="profile">
-                    <img src="./assets/14.jpg" alt="">
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
                 </div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
@@ -206,6 +316,17 @@
                       </p>
                     </div>
                 </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="250" data-aos-offset="0">
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title">6. When will the product launch?</span>
+                      <img src="./assets/top-right.png" alt="arrow">
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        We are currently in the R&D and testing phase. The official launch is just a few months away! Stay tuned for weekly updates and behind-the-scenes progress.
+                      </p>
+                    </div>
+                </div>
             </div>   
         </div>
     </section>
@@ -215,7 +336,126 @@
             <div class="title">Blog & Articles</div>
             <div class="description">Latest Articles</div>
 
-            <div class="blog-contents">
+            <div class="swiper blog-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">Top 5 Tips for First-Time RC Pilots.</div>
+                            <img src="./assets/blog/rc-plane.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">RC Cars vs. RC Trucks: Which One's Right for You?</div>
+                            <img src="/assets/blog/truck.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">How to Maximize Battery Life in Your RC Toys.</div>
+                            <img src="./assets/blog/battery.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">Top 5 Tips for First-Time RC Pilots.</div>
+                            <img src="./assets/blog/rc-plane.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">RC Cars vs. RC Trucks: Which One's Right for You?</div>
+                            <img src="/assets/blog/truck.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-card">
+                            <div class="center-btn">
+                                View <img src="./assets/top-right.png" alt="icon" >
+                            </div>
+                            <div class="tags">
+                                <span>
+                                    <img src="./assets/supermarket.png" alt="icon">
+                                    Business
+                                </span>
+                                <span>
+                                    <img src="./assets/calendar.png" alt="">
+                                    Oct 25, 2024
+                                </span>
+                            </div>
+                            <div class="card-title">How to Maximize Battery Life in Your RC Toys.</div>
+                            <img src="./assets/blog/battery.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="blog-contents">
                 <div class="blog-card">
                     <div class="center-btn">
                         View <img src="./assets/top-right.png" alt="icon" >
@@ -267,7 +507,7 @@
                     <div class="card-title">How to Maximize Battery Life in Your RC Toys.</div>
                     <img src="./assets/blog/battery.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
 
             <button class="btn-1">View All <img src="./assets/top-right.png" alt="icon"></button>
         </div>
@@ -277,7 +517,13 @@
         <div class="footer-section">
             <div class="footer-row">
                 <div class="footer-title">About Us</div>
-                <p>At onnat we are a dynamic creative agency dedicated to transforming your vision into captivating digital experiences.</p>
+                <p>At Xyonica Hobby Store, we
+                    don’t just build drones — we
+                    engineer dreams, shaping
+                    the future of flight with
+                    creativity, precision, and
+                    unstoppable passion.
+                </p>
                 <div class="social-media">
                     <a href="#"><img src="/assets/facebook.png" alt="icon"></a>
                     <a href="#"><img src="/assets/whatsapp.png" alt="icon"></a>
@@ -289,10 +535,10 @@
                 <div class="footer-title">Navigation</div>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Explore (Blogs)</a></li>
+                    <li><a href="#">About Us</a></li>                    
+                    <!-- <li><a href="#"></a></li> -->
                 </ul>
             </div>
             <div class="footer-row">
@@ -305,15 +551,21 @@
                 </ul>
             </div>
             <div class="footer-row">
-                <div class="footer-title">Newsletter</div>
-                <form action="">
+                <div class="footer-title">Contact Us</div>
+                <!-- <form action="">
                     <input type="email" placeholder="Enter Email.">
                     <button><img src="./assets/right.png" alt=""></button>
-                </form>
+                </form> -->
+                <ul>
+                    <li><a href="" target="_blank">Address: Tollygunge, Kolkata - 700093 </a></li>
+                    <li><a href="mailto:support@xyonica.com" target="_blank">Email: support@xyonica.com</a></li>
+                    <li><a href="" target="_blank">Whatsapp: 123456789</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 All rights for Pentaclay</p>
+            <p class="terms-and-condition">Terms and condition <a href="">Short Write Up</a></p>
+            <p>© 2025 All rights for WeForge</p>
         </div>
     </footer>
 
@@ -330,6 +582,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://unpkg.com/lenis@1.1.21/dist/lenis.min.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             
     <script>
         AOS.init({
@@ -352,5 +606,6 @@
     </script>
     <script type="module" src="/script/model.js" ></script>    
     <script src="/script/app.js"></script>
+    <script src="/script/slider.js"></script>
 </body>
 </html>
