@@ -60,6 +60,7 @@ a{
 .rotate{
     animation: rotate 20s linear infinite;
     transform-origin: center;
+    filter: var(--img-to-primary)
 }
 @keyframes rotate {
   from {
