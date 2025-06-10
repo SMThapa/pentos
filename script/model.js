@@ -1,5 +1,4 @@
 const canvas = document.getElementById('myCanvas');
-
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(15, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -28,6 +27,7 @@ loader.setDRACOLoader(dracoLoader);
 let model;
 loader.load(
     'model/drone.glb',
+    // 'model/VTOL_DEMO_Good.gltf',
     function (gltf) {
         model = gltf.scene;
 
@@ -61,7 +61,7 @@ loader.load(
 
 function animate() {
     requestAnimationFrame(animate);    
-    renderer.render(scene, camera);
+    renderer.render(scene, camera);    
 }
 animate();
 
