@@ -741,7 +741,7 @@ footer .footer-section{
 footer .footer-section .footer-title{
     font-size: 1.8rem;
     font-family: var(--font-bold);
-    color: white;
+    color: var(--primary-color);
     letter-spacing: 1.5px;
     margin-bottom: 25px;
 }
@@ -758,7 +758,8 @@ footer .footer-section .social-media{
 footer .footer-section .footer-row  .social-media img{
     height: 35px;
     width: 35px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7459%) hue-rotate(292deg) brightness(130%) contrast(96%);
+    /* filter: brightness(0) saturate(100%) invert(100%) sepia(8%) saturate(7459%) hue-rotate(292deg) brightness(130%) contrast(96%); */
+    filter: var(--img-to-primary)
 }
 footer .footer-section ul li{
     list-style: none;
