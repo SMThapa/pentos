@@ -132,6 +132,7 @@ a{
     display: flex;
     align-items: center;
     column-gap: 8px;
+    border-radius: 12px;
 }
 .btn-2:hover{
     background-color: white;
@@ -312,7 +313,7 @@ main{
     text-align: center;
     font-family: var(--font-bold);
     color: var(--primary-color);
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(3rem, 20vw, 7rem);
     line-height: 1;    
     top: 30%;
     left: 50%;
@@ -337,7 +338,7 @@ main{
 /* hero section ends */
 
 section {
-    min-height: clamp(700px, 100vh, 150vh);    
+    height: 100%;
     display: flex;
     background-color: var(--barkground1);
     color: white;        
@@ -345,14 +346,14 @@ section {
 }
 section .title{
     font-family: var(--font-bold);
-    font-size: 5rem;    
+    font-size: clamp(2rem, 20vw, 4rem);    
     color: var(--primary-color);    
     border-bottom: 2px solid var(--primary-color);
     margin-bottom: 25px;
     width: 100%;
 }
 section .description{
-    font-size: clamp(1.2rem, 5rem, 2rem);
+    font-size: clamp(1.1rem, 20rem, 1.8rem);
     /* max-width: 60%; */
     width: 100%;
     line-height: 1;
@@ -362,15 +363,16 @@ section .description{
 .contents{
     background: rgba(0,0,0, .2);
     backdrop-filter: blur(12px);
-    padding: 5rem 45px;
+    padding: 6rem 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 2;
-    width: 55%;
+    width: 50%;
+    border-radius: 25px;
 }
 section .here{
-    width: 45%;
+    width: 50%;
     height: 100%;
 }
 section p{
@@ -423,7 +425,7 @@ section .about-contents .achivements .gap{
 }
 
 section#blankSpace{    
-    min-height: 600px !important;     
+    min-height: 500px !important;     
     background-repeat: no-repeat;
     background-size: 50%;    
     overflow: hidden;
@@ -440,7 +442,7 @@ section#blankSpace{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 8rem 25px;
+    padding: 4rem 25px;
     z-index: 5;
     position: relative;
 }   
@@ -492,13 +494,18 @@ section#blankSpace{
     font-size: 3rem;
 }
 /* product section ends*/
-
 .faq-section{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 8rem 25px;
+    padding: 4rem 25px;
     z-index: 5;
+}
+.faq-section .description{
+    margin-bottom: 60px;
+}
+#accordion-button-2{
+    padding-top: 0;
 }
 .accordion .accordion-item {
     border-bottom: 1px solid #e5e5e5;
@@ -513,7 +520,7 @@ section#blankSpace{
     width: 100%;
     padding: 1em 0;
     color: var(--dark-color);
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 5vw, 1.5rem);
     font-weight: 400;
     border: none;
     background: none;
@@ -566,9 +573,9 @@ section#blankSpace{
     will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    margin: 2em 0;
+    margin: 2rem 0;
     opacity: .8;
     padding: 0 25px;
 }
@@ -578,10 +585,10 @@ section#blankSpace{
 
 }
 .testimonial-section{
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 8rem 25px;
+    padding: 4rem 25px;
     z-index: 5;
 }
 .testimonial-section .testimonial-card{
@@ -638,7 +645,7 @@ section#blankSpace{
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    padding: 8rem 25px;
+    padding: 4rem 25px;
     z-index: 5;
 }
 /* .blogs-section {

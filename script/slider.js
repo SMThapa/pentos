@@ -1,7 +1,7 @@
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".testimonial-slider", {
-    spaceBetween: 50,
+    spaceBetween: 80,
     centeredSlides: true,
     slidesPerView: 3,
     loop: true,
@@ -9,10 +9,10 @@ var swiper = new Swiper(".testimonial-slider", {
         delay: 3000,
         disableOnInteraction: false
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-    },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true
+    // },
     // on: {
     //     autoplayTimeLeft(s, time, progress) {
     //         progressCircle.style.setProperty("--progress", 1 - progress);

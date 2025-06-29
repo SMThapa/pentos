@@ -44,7 +44,7 @@ loader.load(
         model.position.z -= center.z;
 
         model.rotation.y = 0
-        model.rotation.x = .15
+        model.rotation.x = .2
         
         model.position.x = 0
         model.position.y = -.25
@@ -52,6 +52,9 @@ loader.load(
         
         scene.add(model);
         setupScrollAnimations();
+
+        //resize on load
+        resizeModelToWidth();
     },
     undefined,
     function (error) {
@@ -65,12 +68,23 @@ function animate() {
 }
 animate();
 
+function resizeModelToWidth() {
+    const width = window.innerWidth;    
+    const scaleFactor = width / 1000; // Assuming 1920 is the reference width
+    if(width < 1000){    
+        if (model) {
+            model.scale.set(scaleFactor, scaleFactor, scaleFactor);
+        }
+    }
+}
+
 window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     let width = window.innerWidth;
     let height = window.innerHeight;
     renderer.setSize(width, height);    
+    resizeModelToWidth();
 });
 
 ScrollTrigger.defaults({ scrub: 1 });
@@ -125,12 +139,12 @@ function setupScrollAnimations() {
     const tl4 = gsap.timeline({
         scrollTrigger: {
             trigger: "#blankSpace",         
-            start: "50% 60%",                 
-            end: "80% 20%", 
+            start: "10% 40%",                 
+            end: "90% 40%", 
             scrub: 1,
             // markers: true,
         }
     })
-    tl4.to(model.position, { x: 0, z:5, y: .6 }, 0);
+    tl4.to(model.position, { x: 0, z:1, y: .6 }, 0);
     tl4.to(model.rotation, { x:-.15,  }, 0);
 }
